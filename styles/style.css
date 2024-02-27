@@ -1,1 +1,104 @@
-/* место для вашего кода */
+/* Header */
+
+.header {
+    margin: 92px 24px 96px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 0.01em;
+}
+
+.header__menu {
+    justify-self: end;
+}
+
+.header__menu-list {
+    display: flex;
+    flex-direction: row;
+    list-style: circle;
+}
+
+.header__menu-item {
+    margin: 14px;
+    border-bottom: 1px solid black;
+}
+
+.header__menu-item-active {
+    list-style: none;
+    border-bottom: none;
+    letter-spacing: 0;
+}
+
+.header__logo {
+    height: 105px;
+    width: 129px;
+}
+
+.contact-info {
+    justify-self: end;
+    max-width: 65%;
+    padding: 5px 45px 5px 2px;
+    line-height: 135%;
+}
+
+.contact-phone {
+    border-bottom: 1px solid black;
+}
+
+.contact-email {
+    border-bottom: 1px solid black;
+}
+
+.contact-address {
+    letter-spacing: 0;
+}
+
+/* Cover */
+
+.cover {
+    background-image: url(../images/cover.jpg);
+    margin-bottom: 97px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.cover__title {
+    padding: 165px 50px 0;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115%;
+    letter-spacing: 0.3em;
+}
+
+.asept-word {
+    display: block;
+}
+
+.cover__title-text-center {
+    text-align: center;
+}
+
+.cover__title-text-right {
+    text-align: right;
+}
+
+.cover__text {
+    display: inline-block;
+    padding: 147px 79px 62px 78px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 127%;
+}
+
+.cover__button {
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
