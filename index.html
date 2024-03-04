@@ -12,40 +12,177 @@
   <body>
     <header class="header">
       <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li class="header__menu-item header__menu-item-active">
-            <a href="#0">главная</a>
+        <ul class="header__links-list">
+          <li class="header__links-list-item header__link_active">
+            <a href="#0" class="link_no-decoration">главная</a>
           </li>
-          <li class="header__menu-item"><a href="#0">посмотреть лоты</a></li>
-          <li class="header__menu-item"><a href="#0">об аукционе</a></li>
+          <li class="header__links-list-item">
+            <a href="#0" class="link_no-decoration">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="#0" class="link_no-decoration">об аукционе</a>
+          </li>
         </ul>
       </nav>
-      <img
-        src="./images/logo-black.svg"
-        class="header__logo"
-        alt="Оно тебе надо"
-      />
-      <div class="contact-info">
-        <a href="tel:+9 999 555 5555" class="contact-phone">+9 999 555 5555</a>
-        <a href="info@sobaka.ge" class="contact-email">info@sobaka.ge</a>
-        <address class="contact-address">
-          наб. Принсенграхт 263- 265, Амстердам
-        </address>
-      </div>
+      <a
+        ><img
+          src="./images/logo-black.svg"
+          alt="Оно тебе надо"
+          class="header__logo"
+      /></a>
+      <address class="address">
+        <a href="tel:+9 999 555 5555" class="link-border link_no-decoration"
+          >+9 999 555 5555</a
+        >
+        <a href="info@sobaka.ge" class="link-border link_no-decoration"
+          >info@sobaka.ge</a
+        >
+        <p class="contact-address">наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
     </header>
     <main>
       <section class="cover">
+        <div class="overlay"></div>
         <h1 class="cover__title">
-          <span class="asept-word">оно</span>
-          <span class="asept-word cover__title-text-center">тебе</span>
-          <span class="asept-word cover__title-text-right">надо</span>
+          <span class="aligned-text"
+            >о<span class="letter-spacing-extended">но</span></span
+          >
+          <span class="aligned-text cover__title-text-center"
+            >те<span class="letter-spacing-extended">бе</span></span
+          >
+          <span class="aligned-text cover__title-text-right"
+            ><span class="letter-spacing-extended">н</span>ад<span
+              class="letter-spacing-zero"
+              >о</span
+            ></span
+          >
         </h1>
-        <p class="cover__text">Аукцион вещей, в которые никто не верил</p>
+        <p class="cover__text">
+          Аукцион вещей<span class="letter-spacing-extended-text">,в</span
+          >которые никто не верил
+        </p>
         <button class="cover__button">Сделать ставку</button>
       </section>
-      <section class="loots"></section>
-      <section class="about"></section>
+      <section class="loots">
+        <h2 class="loots__header">лоты</h2>
+        <ul class="loots__card-list">
+          <li class="loots__card-list-item">
+            <a href="#0" class="card__link link_no-decoration"
+              ><div class="overlay"></div>
+              <article class="card card_type_film">
+                <h4 class="card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h4>
+                <p class="card__text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
+              </article></a
+            >
+          </li>
+          <li class="loots__card-list-item">
+            <a href="#0" class="card__link link_no-decoration"
+              ><div class="overlay"></div>
+              <article class="card card_type_book">
+                <h4 class="card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h4>
+                <p class="card__text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
+              </article></a
+            >
+          </li>
+          <li class="loots__card-list-item">
+            <a href="#0" class="card__link link_no-decoration">
+              <div class="overlay"></div>
+              <article class="card card_type_picture">
+                <h4 class="card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h4>
+                <p class="card__text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
+              </article></a
+            >
+          </li>
+        </ul>
+        <a href="#0" class="loots__info link_no-decoration"
+          >посмотреть больше</a
+        >
+      </section>
+      <section class="about">
+        <div class="about__logo"></div>
+        <h2 class="about__title">Об аукционе</h2>
+        <p class="about__text">
+          Здесь вы&nbsp;не&nbsp;встретите очередное пафосное собрание невероятно
+          дорогого антиквариата. Наши лоты вообще не&nbsp;должны были попасть
+          ни&nbsp;на&nbsp;один аукцион. Потому что кому нужен дневник
+          девочки-подростка или картина, которую может нарисовать даже ребёнок?
+          Кому нужны все эти странные вещи, созданные любителями?
+        </p>
+        <p class="about__text">
+          Слишком сложные или, наоборот, слишком простые. Опережающие своё
+          время. В&nbsp;пух и&nbsp;прах растерзанные критиками. Непринятые
+          и&nbsp;непонятые. Когда-то они казались просто неудачными. Но,
+          несмотря на&nbsp;критику, кажущуюся простоту или сложность, сейчас без
+          этих лотов невозможно представить современную культуру. Когда
+          в&nbsp;эти вещи не&nbsp;верил никто, продолжали верить
+          их&nbsp;создатели. И&nbsp;сейчас эти лоты стали культовыми.
+        </p>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <address class="footer__contact-info">
+        <a href="tel:+9 999 555 5555" class="link-border link_no-decoration"
+          >+9 999 555 5555</a
+        >
+        <a href="info@sobaka.ge" class="link-border link_no-decoration"
+          >info@sobaka.ge</a
+        >
+        <p class="contact-address">наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
+      <nav class="">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item-active">
+            <a href="#0" class="link_no-decoration">главная</a>
+          </li>
+          <li class="">
+            <a href="#0" class="link-border link_no-decoration"
+              >посмотреть лоты</a
+            >
+          </li>
+          <li class="">
+            <a href="#0" class="link-border link_no-decoration">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social-list">
+        <li class="">
+          <a class="footer__social-link" href="#0"
+            ><img src="./images/yt.svg" class="footer__social-icon"
+          /></a>
+        </li>
+        <li class="">
+          <a class="footer__social-link" href="#0"
+            ><img src="./images/vk.svg" class="footer__social-icon"
+          /></a>
+        </li>
+        <li class="">
+          <a class="footer__social-link" href="#0"
+            ><img src="./images/pinterest.svg" class="footer__social-icon"
+          /></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
