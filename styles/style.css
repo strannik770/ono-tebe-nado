@@ -40,7 +40,7 @@
     border-bottom: 1px solid black;
 }
 
-.link_no-decoration {
+.link-no-decoration {
     text-decoration: none;
 }
 
@@ -220,10 +220,10 @@
 .card__text {
     position: relative;
     z-index: 1;
-    padding: 0px 40px 50px;
+    padding: 0px 40px 48px;
     font-weight: 400;
     font-size: 20px;
-    line-height: 120%;
+    line-height: 119%;
 }
 
 .loots__info {
