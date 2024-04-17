@@ -27,12 +27,10 @@
 
 .header__links-list-item {
     margin: 16px;
-    border-bottom: 1px solid black;
 }
 
-.header__link_active {
+.header__links-list-item_no-bullit {
     list-style: none;
-    border-bottom: none;
     letter-spacing: 0;
 }
 
@@ -42,6 +40,10 @@
 
 .link-no-decoration {
     text-decoration: none;
+}
+
+.header__link_active {
+    border-bottom: none;
 }
 
 .header__logo {
@@ -68,9 +70,10 @@
 .cover {
     position: relative;
     background-image: url(../images/cover.jpg);
-    margin-bottom: 179px;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 179px;
     text-transform: uppercase;
     color: #fff;
     z-index: 1;
@@ -138,7 +141,7 @@
     padding: 12px 32px 11px 31px;
     border: 1px solid #fff;
     background-color: transparent;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 500;
     font-size: 22px;
     text-transform: uppercase;
